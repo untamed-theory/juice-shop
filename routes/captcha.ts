@@ -21,6 +21,7 @@ function captchas () {
 
     const expression = firstTerm.toString() + firstOperator + secondTerm.toString() + secondOperator + thirdTerm.toString()
     const answer = eval(expression).toString() // eslint-disable-line no-eval
+    const test = eval(expression).toString()
 
     const captcha = {
       captchaId,
